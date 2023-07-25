@@ -7,7 +7,7 @@ import os
 import requests
 
 placeholderTxt = "Type the number here"
-st.subheader("Please enter a :blue[Test number] or a :blue[Screen number] from Overflow")
+st.subheader("Please enter a :blue[Test number] or a :blue[Screen number]")
 st.text_input(
     "",
     placeholderTxt,
