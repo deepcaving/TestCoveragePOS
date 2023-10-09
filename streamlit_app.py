@@ -20,8 +20,8 @@ if (st.session_state.placeholder == ""):
 if (st.session_state.placeholder == placeholderTxt):
     st.markdown("", unsafe_allow_html=False) 
 else:
-    # url = 'https://us-central1-snappyvms.cloudfunctions.net/notion-tests-coverage?testNum=' + st.session_state.placeholder
-    url = 'https://us-central1-snappyvms.cloudfunctions.net/notion-tests-coverage-imdb?testNum=' + st.session_state.placeholder
+    url = 'https://us-central1-snappyvms.cloudfunctions.net/notion-tests-coverage?testNum=' + st.session_state.placeholder
+    # url = 'https://us-central1-snappyvms.cloudfunctions.net/notion-tests-coverage-clean?testNum=' + st.session_state.placeholder
     x = requests.get(url)
     st.markdown(x.text, unsafe_allow_html=False)
 
